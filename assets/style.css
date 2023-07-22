@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 5%;
+  padding: 20px 1%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  color: #fff;
+  user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+}
+
+.navigation .btnLogout-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: .5s;
+}
+
+.navigation .btnLogout-popup:hover {
+  background: #fff;
+  color: #162938;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    background-image: url('https://source.unsplash.com/1920x1080/?landscape');
+    font-size: 120%;
+}
+
+.card {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.card2 {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(100px);
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 15%;
+  height: 33%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button {
+    
+    margin: 0.5em;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    
+}
+
+input.search-bar {
+    
+    outline: none;
+    padding: 0.4em 1em;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+    
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp {
+    margin: 0;
+}
+
+
+.dropbtn {
+    
+    outline: none;
+    padding: 0.4em 1em;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+    width: calc(100% - 100px);
+    
+  }
+  
+  .dropdown {
+    outline: none;
+    padding: 0.4em 1em;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+    width: calc(100% - 40px);
+
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black; 
+    padding: 12px 100px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #1d1d1d;}
+
+  .dropdown:hover {
+    background: #2c2c2c6b;
+}

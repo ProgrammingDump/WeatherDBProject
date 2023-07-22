@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="login.css">
+  <title>Weather</title>
+</head>
+<body>
+    <header>
+        <h2 class = "logo"> Weather </h2>
+    </header>
+
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="/" method="POST">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="username" required name="username">
+                        <label for="">Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required name="password">
+                        <label for="">Password</label>
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have an account? <a href="/register">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

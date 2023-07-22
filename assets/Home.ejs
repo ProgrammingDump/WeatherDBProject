@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewpoint" content = "width=device-width, initial scale = 1.0">
+    <title> Weather </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href = "./style.css">
+    <script src = "./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2 class = "logo"> Weather </h2>
+        <nav class = "navigation">
+
+            <% if(users[0].admin){ %>
+                <a href = "/DataEntry">Data Entry</a>
+                <a href = "/ForecastEntry">Forecast Entry</a>
+              <% } else{ %>  
+                <h1> </h1>
+             <% } %>
+
+             <a href = "/">Logout</a> &nbsp; &nbsp; &nbsp;
+            
+        </nav>
+    </header>
+
+    <div class = "card">
+        <div class = "dropdown">Select City
+            <div class="dropdown-content">
+                <a href="/lahore">Lahore</a>
+                <a href="/karachi">Karachi</a>
+                <a href="/islamabad">Islamabad</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

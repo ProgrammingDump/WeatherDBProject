@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="DataEntry.css">
+  <title>Weather</title>
+</head>
+<body>
+    <% if(!users[0].admin){ %>
+        <script> document.location.href = '/' </script>
+      <% } else{ %>  
+        <h1> </h1>
+     <% } %>
+
+    <header>
+        <h2 class = "logo"> Weather </h2>
+        <nav class = "navigation">
+            <a href = "/Home">Home</a>
+            <a href = "/DataEntry">Data Entry</a>
+            <a href = "/">Logout</a> &nbsp; &nbsp; &nbsp;
+            
+        </nav>
+    </header>
+
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="/Entry2" method="POST">
+                    <h2>Forecast Entry</h2>
+                    <div class="inputbox">
+                        <input type="CityID" required name="CityID">
+                        <label for="">City ID</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="ForecastID" required name="ForecastID">
+                        <label for="">Forecast ID</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="Date" required name="Date">
+                        <label for=""></label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="MeasurementID" required name="MeasurementID">
+                        <label for="">Measurement ID</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="Temperature" required name="Temperature">
+                        <label for="">Temperature</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="Humidity" required name="Humidity">
+                        <label for="">Humidity</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="Precipitation" required name="Precipitation">
+                        <label for="">Precipitation</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="WindSpeed" required name="WindSpeed">
+                        <label for="">Wind Speed</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="ConditionID" required name="ConditionID">
+                        <label for="">Condition ID</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="AlertID" name="AlertID">
+                        <label for="">Alert ID</label>
+                    </div>
+                    <button>Save</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
